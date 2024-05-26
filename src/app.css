@@ -1,0 +1,16 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    background-color:     var(--colour-light-brown);
+}
+
+:root {
+    --colour-light-brown: #D9C5B2;
+    --colour-dark-brown: #9E6240;
+    --colour-dark-blue: #2E294E;
+    --colour-dark-teal: #096B72;
+    --colour-midnight: #151515;
+}

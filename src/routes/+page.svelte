@@ -1,2 +1,16 @@
-<h1>hello world</h1>
-<p class="text-green-400">Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+    import Main from '../components/Main.svelte';
+    import Footer from '../components/Footer.svelte';
+    import Header from '../components/Header.svelte';
+
+</script>
+
+<div class="container">
+    <Header/>
+    <Main/>
+    <Footer/>
+</div>
+
+<style>
+
+</style>
