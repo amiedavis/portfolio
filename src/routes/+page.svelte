@@ -1,16 +1,18 @@
 <script>
-    import Main from '../components/Main.svelte';
-    import Footer from '../components/Footer.svelte';
-    import Header from '../components/Header.svelte';
+    import About from '../components/About.svelte';
+    import NameSection from '../components/NameSection.svelte';
 
 </script>
 
 <div class="container">
-    <Header/>
-    <Main/>
-    <Footer/>
+    <NameSection/>
+    <About/>
 </div>
 
 <style>
-
+    div.container {
+        display: flex;
+        padding: 3rem 2rem 0 2rem;
+        gap: 5rem;
+    }
 </style>

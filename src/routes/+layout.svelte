@@ -7,7 +7,10 @@
   </div>
 
 <style>
-    /* div.container {
-        background-color: #D9C5B2;
-    } */
+  
+
+    div.container {
+        background-color: var(--colour-dark-blue);
+        height: 100%;
+    }
 </style>
