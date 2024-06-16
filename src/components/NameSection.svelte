@@ -74,4 +74,9 @@
         padding: 0 1rem;
     }
 
+    @media (max-width: 480px) {
+        div.headline-container {
+            width: 100%;
+        }
+    }
 </style>

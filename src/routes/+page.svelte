@@ -15,4 +15,10 @@
         padding: 3rem 2rem;
         gap: 5rem;
     }
+
+    @media (max-width: 480px) {
+        div.container {
+            flex-direction: column;
+        }
+    }
 </style>

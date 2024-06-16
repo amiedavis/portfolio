@@ -76,5 +76,10 @@
         font-size: 0.9rem;
     }
 
+    @media (max-width: 480px) {
+        input, textarea, button {
+            width: 100%;
+        }
+    }
 
 </style>
