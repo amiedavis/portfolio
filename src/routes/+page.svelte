@@ -12,7 +12,7 @@
 <style>
     div.container {
         display: flex;
-        padding: 3rem 2rem 0 2rem;
+        padding: 3rem 2rem;
         gap: 5rem;
     }
 </style>

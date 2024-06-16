@@ -18,6 +18,19 @@
         Right now I’m working on building up my portfolio, since most of my work life so far has consisted of contributing to proprietary software. This means that I'm working at a reduced rate - so if you have a tight budget, now might be the best time to get in touch!<br><br>
         Whether you’re looking for someone to build you an application, website, or think there might be a way to automate something you’re sick of doing manually, I’d be happy to chat!
     </p>
+
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+
+        <button type="submit">Submit</button>
+    </form>
 </div>
 
 
@@ -25,5 +38,43 @@
     div.container {
         flex: 1;
     }
+
+    form {
+        margin-top: 2rem;
+    }
+
+    input, textarea {
+        margin-top: 5px;
+        margin-bottom: 1rem;
+        width: 25rem;
+        box-sizing: border-box;
+        padding: 0.5rem;
+    }
+
+    input {
+        height: 30px;
+    }
+
+    button {
+        margin-top: 1rem;
+        background-color: var(--colour-dark-teal);
+        appearance: none;
+        border: none;
+        border-radius: 6px;
+        padding: 1rem;
+        width: 25rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    button:hover {
+        color: var(--colour-midnight);
+    }
+
+    label {
+        color: var(--colour-light-brown);
+        font-size: 0.9rem;
+    }
+
 
 </style>

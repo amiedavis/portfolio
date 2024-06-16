@@ -7,10 +7,8 @@
   </div>
 
 <style>
-  
 
     div.container {
         background-color: var(--colour-dark-blue);
-        height: 100%;
     }
 </style>
