@@ -1,5 +1,13 @@
 <script>
+    import { onMount } from 'svelte';
 
+    const captchaKey = '6LfFsfspAAAAAPPsN96jbKv7p2NAMRx2MeAzApr6';
+
+    onMount(() => {
+        window.onSubmit = () => {
+            document.getElementById("contact-form").submit();
+        };
+    });
 </script>
 
 <div class="container">
@@ -9,7 +17,7 @@
         Isn’t that a great question, and one I think we should all ask ourselves on a regular basis. 😉 <br><br>
         I am a partner, aunty, lover of pottery and poetry, keen amateur futsal player and Matildas supporter.<br><br>
         I also like to design and write software, as I first discovered whilst in the second year of my Engineering degree (but I went on and majored in mechatronics anyway - microprocessors are fun!).<br><br>
-        Since graduating I have built up a combined total of 7 years experience working as a full-stack engineer.
+        Since graduating with a Bachelor of Engineering (Hons) from the Australian National University, I have built up 7 years experience working as a full-stack engineer.
     </p>
 
     <h2>Work with me</h2>
@@ -19,17 +27,17 @@
         Whether you’re looking for someone to build you an application, website, or think there might be a way to automate something you’re sick of doing manually, I’d be happy to chat!
     </p>
 
-    <form>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name"><br>
+    <form id="contact-form" action="https://formspree.io/f/myyrrard" method="POST">
+        <label for="name">Name*:</label><br>
+        <input type="text" id="name" name="name" required><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
+        <label for="email">Email*:</label><br>
+        <input type="email" id="email" name="email" required><br>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
+        <label for="message">Message*:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
 
-        <button type="submit">Submit</button>
+        <button class="g-recaptcha" data-sitekey={captchaKey} data-action='submit' data-callback="onSubmit">Submit</button>
     </form>
 </div>
 
