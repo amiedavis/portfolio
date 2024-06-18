@@ -1,36 +1,54 @@
 <script>
     import githubIcon from '../images/github-mark-white.svg';
     import linkedInIcon from '../images/linkedin.svg';
+
+    const githubLink = 'https://github.com/amiedavis';
+    const linkedInLink = 'https://www.linkedin.com/in/amiedavis/'
+
 </script>
 
 <div class="container">
-    <h1>Amie Davis</h1>
+    <div class="intro-container">
+        <h1>Amie Davis</h1>
 
-    <div class="headline-container">
-        <h3 class="headline">Full stack software engineer</h3>
+        <div class="headline-container">
+            <h3 class="headline">Full stack software engineer</h3>
 
-        <div class="icons">
-            <img class="icon" crossorigin="anonymous" src={githubIcon} alt="Github icon">
-            <img class="icon" crossorigin="anonymous" src={linkedInIcon} alt="LinkedIn icon">
+            <div class="icons">
+                <a href={githubLink} target="_blank">
+                    <img class="icon" crossorigin="anonymous" src={githubIcon} alt="Github icon">
+                </a>
+                
+                <a href={linkedInLink} target="_blank">
+                    <img class="icon" crossorigin="anonymous" src={linkedInIcon} alt="LinkedIn icon">
+                </a>
+            </div>
         </div>
     </div>
 
-    <h4 class="label-heading">I have experience working with...</h4>
+    <h4 class="label-heading">I have experience with...</h4>
     <div class="labels">
         <div class="label">Java</div>
         <div class="label">Golang</div>
         <div class="label">SQL</div>
         <div class="label">Javascript</div>
-        <div class="label">HTML</div>
+        <div class="label">HTML5</div>
         <div class="label">CSS</div>
         <div class="label">React</div>
         <div class="label">Svelte</div>
+        <div class="label">Node.js</div>
     </div>
 </div>
 
 <style>
     div.container {
         flex: 1;
+    }
+
+    div.intro-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     h3.headline {
