@@ -6,7 +6,7 @@ const config = {
 	kit: {
 		adapter: adapter(),
 		files: {
-			appTemplate: "src/index.html",
+			appTemplate: "index.html",
 		}
 	}
   };
