@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
-  </script>
+</script>
   
   <div class="container">
     <slot />
