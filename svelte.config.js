@@ -17,9 +17,9 @@ const config = {
 		files: {
 			appTemplate: "index.html",
 		},
-		paths: {
-            base: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
-        },
+		// paths: {
+        //     base: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
+        // },
 	},
 	preprocess: vitePreprocess(),
   };
