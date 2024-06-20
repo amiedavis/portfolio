@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 // TODO: set up a 404 page
@@ -18,7 +18,7 @@ const config = {
 			appTemplate: "index.html",
 		},
 		paths: {
-            base: process.env.NODE_ENV === 'production' ? '/sveltekit-github-pages' : '',
+            base: process.env.NODE_ENV === 'production' ? '/portfolio' : '',
         },
 	},
 	preprocess: vitePreprocess(),
