@@ -95,6 +95,7 @@
     @media (max-width: 480px) {
         div.headline-container {
             width: 100%;
+            text-align: center;
         }
     }
 </style>

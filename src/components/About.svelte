@@ -3,12 +3,22 @@
 
     const captchaKey = '6LfFsfspAAAAAPPsN96jbKv7p2NAMRx2MeAzApr6';
 
+    let name, email, message;
+
+    function beforeUnload() {
+        name = null;
+        email = null;
+        message = null;
+    }
+
     onMount(() => {
         window.onSubmit = () => {
             document.getElementById("contact-form").submit();
         };
     });
 </script>
+
+<svelte:window on:beforeunload={beforeUnload}/>
 
 <div class="container">
     <h2>Who am I?</h2>
@@ -29,15 +39,15 @@
 
     <form id="contact-form" action="https://formspree.io/f/myyrrard" method="POST">
         <label for="name">Name*:</label><br>
-        <input type="text" id="name" name="name" required><br>
+        <input type="text" id="name" name="name" bind:value={name} required><br>
 
         <label for="email">Email*:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" bind:value={email} required><br>
 
         <label for="message">Message*:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="50" bind:value={message} required></textarea><br>
 
-        <button class="g-recaptcha" data-sitekey={captchaKey} data-action='submit' data-callback="onSubmit">Submit</button>
+        <input name="submit" type="submit" class="g-recaptcha submit" data-sitekey={captchaKey} data-action='submit' data-callback="onSubmit">
     </form>
 </div>
 
@@ -63,7 +73,7 @@
         height: 30px;
     }
 
-    button {
+    input.submit {
         margin-top: 1rem;
         background-color: var(--colour-dark-teal);
         appearance: none;
@@ -73,9 +83,10 @@
         width: 25rem;
         color: white;
         cursor: pointer;
+        height: 3rem;
     }
 
-    button:hover {
+    input.submit:hover {
         color: var(--colour-midnight);
     }
 
@@ -85,7 +96,7 @@
     }
 
     @media (max-width: 480px) {
-        input, textarea, button {
+        input, textarea, input.submit {
             width: 100%;
         }
     }
