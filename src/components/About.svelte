@@ -37,17 +37,19 @@
         Whether you’re looking for someone to build you an application, website, or think there might be a way to automate something you’re sick of doing manually, I’d be happy to chat!
     </p>
 
-    <form id="contact-form" action="https://formspree.io/f/myyrrard" method="POST">
+    <form id="contact-form" action="https://formspree.io/f/myyrrard" accept-charset="utf-8" method="POST">
         <label for="name">Name*:</label><br>
-        <input type="text" id="name" name="name" bind:value={name} required><br>
+        <input type="text" id="name" name="name" bind:value={name} required=""><br>
 
         <label for="email">Email*:</label><br>
-        <input type="email" id="email" name="email" bind:value={email} required><br>
+        <input type="email" name="_replyto" id="email-address" bind:value={email} required=""><br>
 
         <label for="message">Message*:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50" bind:value={message} required></textarea><br>
+        <textarea id="message" name="message" rows="4" cols="50" bind:value={message} required=""></textarea><br>
 
-        <input name="submit" type="submit" class="g-recaptcha submit" data-sitekey={captchaKey} data-action='submit' data-callback="onSubmit">
+        <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+
+        <button class="g-recaptcha" data-sitekey={captchaKey} data-callback='onSubmit' data-action='submit'>Submit</button>
     </form>
 </div>
 
@@ -73,7 +75,7 @@
         height: 30px;
     }
 
-    input.submit {
+    button {
         margin-top: 1rem;
         background-color: var(--colour-dark-teal);
         appearance: none;
@@ -86,7 +88,7 @@
         height: 3rem;
     }
 
-    input.submit:hover {
+    button:hover {
         color: var(--colour-midnight);
     }
 
@@ -96,7 +98,7 @@
     }
 
     @media (max-width: 480px) {
-        input, textarea, input.submit {
+        input, textarea, button {
             width: 100%;
         }
     }
