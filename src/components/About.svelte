@@ -24,17 +24,18 @@
     <h2>Who am I?</h2>
     <hr/>
     <p>
-        Isn’t that a great question, and one I think we should all ask ourselves on a regular basis. 😉 <br><br>
-        I am a partner, aunty, lover of pottery and poetry, keen amateur futsal player and Matildas supporter.<br><br>
-        I also like to design and write software, as I first discovered whilst in the second year of my Engineering degree (but I went on and majored in mechatronics anyway - microprocessors are fun!).<br><br>
-        Since graduating with a Bachelor of Engineering (Hons) from the Australian National University, I have built up 7 years experience working as a full-stack engineer.
+        Isn’t that a great question, and one I think we should all ask ourselves on a regular basis 😉<br><br>
+        First and foremost I am a partner, aunty, lover of pottery and poetry, keen amateur futsal player and Matildas supporter.<br><br>
+        I’m also a full-stack engineer with 7 years experience. I got my start back in uni - I was doing my Engineering degree at the Australian National University when I stumbled upon coding in my second year and thought, "Hey, this is pretty cool!" Even though I ended up majoring in mechatronics (because, well, microprocessors are fun), that coding bug never really left me.<br><br>
+        Over the years, I've picked up a few extra skills. I've got a knack for writing software documentation and enjoy the challenge of communicating technical concepts to non-technical audiences. I also love the problem solving involved in breaking down big technical projects into smaller, well-defined tasks, and have more recently taken opportunities to lean more into a Business Analyst role than pure Software Engineering.
     </p>
 
     <h2>Work with me</h2>
     <hr>
     <p>
-        Right now I’m working on building up my portfolio, since most of my work life so far has consisted of contributing to proprietary software. This means that I'm working at a reduced rate - so if you have a tight budget, now might be the best time to get in touch!<br><br>
-        Whether you’re looking for someone to build you an application, website, or think there might be a way to automate something you’re sick of doing manually, I’d be happy to chat!
+        Right now I’m working on building up my portfolio, since most of my work life has consisted of contributing to proprietary software. The cool part? I'm offering lower rates at the moment, which is great if you're working with a tight budget.<br><br>
+        Got an app idea you've been sitting on? Need a website that doesn't look like it's stuck in the 90s? Or maybe you just want someone to help you figure out what you want, with no strings attached? Well, that's where I come in! <br><br>
+        I'm all about turning those 'wouldn't it be nice if...' thoughts into actual, working tech. So if you're curious about what we could create together, let's chat! No pressure, just good ideas and maybe some nerdy jokes thrown in for free.
     </p>
 
     <form id="contact-form" action="https://formspree.io/f/myyrrard" accept-charset="utf-8" method="POST">
