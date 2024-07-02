@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-    <meta property="og:image" content="/favicon.png"/>    
+    <meta property="og:image" content="https://amiedavis.dev/favicon.png"/>    
 </svelte:head>
 
 <div class="container">
