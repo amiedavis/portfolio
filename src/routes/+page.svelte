@@ -4,6 +4,10 @@
 
 </script>
 
+<svelte:head>
+    <meta property="og:image" content="/favicon.png"/>    
+</svelte:head>
+
 <div class="container">
     <NameSection/>
     <About/>
